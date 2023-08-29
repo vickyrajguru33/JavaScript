@@ -1,0 +1,36 @@
+
+<html>
+    <head>
+        <title>Dom Manipulation Part-2</title>
+    </head>
+    <body id="body">
+        <div>
+            hii...This is first Div Tag...
+            <p>Hello this is first paragraph...</p>
+        </div>
+        <hr>
+        <ui>
+            <li>first</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ui>
+        <script>
+            let numb=document.getElementById('body').attributes.length;
+            console.log(numb)
+
+            // Creating Element 
+ 
+            const newDiv=document.createElement('div');
+            const newText=document.createTextNode("This is New Node of div tag created using JavaScript");
+            newDiv.appendChild(newText);
+            body.append(newDiv);
+
+            console.log(newDiv)
+        </script>
+         
+
+    
+    
+
+    </body>
+</html>

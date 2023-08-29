@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Manupulation</title>
+    </head>
+    <body>
+        <ul id="element">
+            <li class="list-items">first Element</li>
+            <li>Second Element</li>
+            <li>Third Element</li>
+        </ul>
+        <div class="allDivs"> first Dev</div>
+        <script>
+            const allDivs=document.getElementsByClassName("allDivs")
+        </script>
+        <table>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email Address</th>
+            </tr>
+            <tr>
+             <td>Hillary</td>
+             <td>Nyakundi</td>
+             <td>tables@mail.com</td>
+            </tr>
+            <tr>
+              <td>Lary</td>
+              <td>Mak</td>
+              <td>developer@mail.com</td>
+            </tr>
+          </table>
+        <script>
+            console.log(document.documentElement)
+            console.log(document.body.firstElementChild)
+            console.log(document.body.lastElementChild)
+            console.log(document.head.firstElementChild);
+            console.log(document.body.children[0])
+
+            const tableTag=document.body.children[1];
+            console.log(tableTag)
+
+            const el1=document.getElementById("element");
+            console.log(el1)
+
+            const el2=document.getElementsByClassName("list-items");
+            console.log(el2)
+
+            console.log(allDivs)
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+
+    </body>
+
+</html>
